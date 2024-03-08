@@ -1,6 +1,6 @@
 require("dotenv").config()
 
-const claseServerBack = require('./models/serverBack')
+const claseServerBack = require('./UserService/models/serverBack')
 const claseServerFront = require('./frontend/models/serverFront')
 const claseServerProductos = require('./services/ProductService/models/serverProductos')
 

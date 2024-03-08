@@ -1,4 +1,4 @@
-const db = require("../models/firebasease"); //para evvitar problemas con firebase
+const db = require("../../../UserService/models/firebase"); //para evvitar problemas con firebase
 const { response, request } = require("express");
 const path = require("path");
 

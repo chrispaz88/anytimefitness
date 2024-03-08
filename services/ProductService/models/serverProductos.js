@@ -41,7 +41,7 @@ class Server {
 
   routes() {
 
-    this.app.use(this.RouteApi, require('../../routes/api.routes'))
+    this.app.use(this.RouteApi, require('../routes/api.routes'))
  
   }
 
