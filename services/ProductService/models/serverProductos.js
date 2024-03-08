@@ -6,7 +6,7 @@ class Server {
   constructor() {
     this.port = process.env.PORT_SERVICE
     this.app = express();
-    this.RouteApi = "/platillos/api"
+    this.RouteApi = "/services/api"
 
     //middlewares
     this.middlewares()

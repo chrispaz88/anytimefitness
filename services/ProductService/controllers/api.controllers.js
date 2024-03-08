@@ -2,28 +2,28 @@ const db = require("../../../UserService/models/firebase"); //para evvitar probl
 const { response, request } = require("express");
 const path = require("path");
 
-const getAllPlatillos = async (req = request, res = response) => {
+const getAllServices = async (req = request, res = response) => {
     try {
-        const platillosSnapshot = await db.collection("platillos").get();
+        const serviciosSnapshot = await db.collection("servicios").get();
 
-        const platillos = platillosSnapshot.docs.map(doc => {
+        const servicios = serviciosSnapshot.docs.map(doc => {
             const data = doc.data();
             // Incluir el ID del documento en los datos del platillo
             return { id: doc.id, ...data };
         });
 
-        res.json(platillos);
+        res.json(servicios);
     } catch (error) {
-        console.error("Error al obtener los platillos:", error);
-        res.status(500).json({ success: false, error: "Error al obtener los platillos" });
+        console.error("Error al obtener los servicios del gym:", error);
+        res.status(500).json({ success: false, error: "Error al obtener los servicios del gym" });
     }
 }
 
 
-const getPlatilloid = async(req=request, res=response)=>{
+const getServicioid = async(req=request, res=response)=>{
     const {id} = req.params   
-    const platilloDoc = await db.collection("platillos").doc(id).get();
-    const producto = platilloDoc.data()
+    const servicioDoc = await db.collection("servicios").doc(id).get();
+    const producto = servicioDoc.data()
     
     res.json(producto)
     
@@ -119,8 +119,8 @@ const addPlatillo = async (req = request, res = response) => {
 };
 
 module.exports ={
-    getAllPlatillos,
-    getPlatilloid,
+    getAllPlatillos: getAllServices,
+    getPlatilloid: getServicioid,
     putPlatillo,
     deletePlatillo,
     addPlatillo
