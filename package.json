@@ -25,6 +25,7 @@
     "ws": "^8.16.0"
   },
   "devDependencies": {
-    "webpack": "^5.90.3"
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
   }
 }
