@@ -1,19 +1,19 @@
 const { Router } = require("express");
-const { getAllPlatillos, getPlatilloid, putPlatillo, deletePlatillo, addPlatillo } = require("../controllers/api.controllers");
+const { getAllServices: getAllServices, getServicioid: getServicioid, putServicio: putServicio, deleteServicio: deleteServicio, addServicio: addServicio } = require("../controllers/api.controllers");
 
 
 
 const router = Router()
 
-router.get("/", getAllPlatillos)
+router.get("/", getAllServices)
 
-router.get("/:id", getPlatilloid)
+router.get("/:id", getServicioid)
 
-router.put("/:id", putPlatillo)
+router.put("/:id", putServicio)
 
-router.delete("/:id", deletePlatillo)
+router.delete("/:id", deleteServicio)
 
-router.post("/", addPlatillo)
+router.post("/", addServicio)
 
 module.exports = router
 

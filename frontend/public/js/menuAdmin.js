@@ -11,7 +11,7 @@ function eliminarPlatillo(platilloId) {
   
   // Si el usuario confirma
   if (confirmacion) {
-    fetch(`http://localhost:8000/platillos/api/${platilloId}`, {
+    fetch(`http://localhost:8000/servicios/api/${platilloId}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

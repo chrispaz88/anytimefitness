@@ -15,7 +15,7 @@ html {
 .header {
     display: flex;
     width: 100%;
-    background-color: #fff;
+    background-color: #5603ad;
     margin-top: 0;
     padding: 20px;
 }
@@ -28,7 +28,7 @@ html {
 
 .navbar a {
     padding: 5px 50px 0 0;
-    color: #E51636;
+    color: #fff;
     font-size: 1.1em;
     font-weight: 700;
     text-decoration: underline 0.1em rgba(0, 0, 0, 0);
@@ -91,7 +91,7 @@ form button {
 }
 
 form button {
-    background-color: #E51636;
+    background-color: #43A047;
     color: #fff;
     font-weight: 700;
     cursor: pointer;
@@ -121,7 +121,7 @@ form button:hover {
 .footer a {
     padding: 1rem;
     font-size: 1.5em;
-    color: #E51636;
+    color: #5603ad;
 }
 
 .fab {

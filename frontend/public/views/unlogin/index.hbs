@@ -1,92 +1,84 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chick-fil-A</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Anytime Fitness - Vive una Vida Sana</title>
+    <link rel="stylesheet" href="../../css/style.css"> <!-- Ensure this CSS file is updated with Anytime Fitness branding -->
     <script src="./js/script.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/4cf78acc70.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <div class="header">
-        <div class="navbar">
-            <a href="/"><i class="fas fa-home"></i></a>
-            <a href="/menu">Menu</a>
-            <a href="/about">About</a>
-            <a href="/chat">Contact</a>
-            <a id="login" href="/login"><i class="fa fa-user"></i></a>
+        <div class="navbar flex ">
+            <section>
+                <a href="/">
+                    <img src="../../img/anytimeLogo.png" alt="">
+                </a>
+            </section>
+            <section>
+                <a href="/">Inicio</a>
+                <a href="/menu">Servicios</a>
+                <a href="">Contacto</a>
+                <a href="">¿Por Qué Unirse?</a>
+            </section>
+            <section class="flex">
+                <a href="/login">Iniciar Sesión
+                    <i class="fas fa-user"></i>
+                </a>
+            </section>
         </div>
     </div>
 
-    <div class="background">
-        <div class="png">
-            <img src="img/png.png">
-        </div>
+    <div class="main-banner">
+        <section>
+            <h1>EN CUALQUIER MOMENTO, EN CUALQUIER LUGAR. <br>Y AHORA CON APPLE FITNESS+.</h1>
+            <p>Hacer ejercicio no debería parecer trabajo. Con entrenamiento personalizado, equipos de alta calidad y ahora acceso gratuito a Apple Fitness+, no hay razón para no amar tu entrenamiento.</p>
+            <button type="button">PRUÉBANOS GRATIS</button>
+        </section>
+        <section class="home-img">
+            <img src="../../img/homepage.webp" alt="">
+        </section>
     </div>
     
-    <div class="chicken">
-        <div class="cknimg">
-            <img src="img/CS.png" style="width: 100%;" title="Chicken Sandwich">
+    <div class="promo-section">
+        <div class="promo-content">
+            <h2>PRUEBA ANYTIME FITNESS GRATIS Y OBTÉN HASTA 3 MESES DE ACCESO A APPLE FITNESS+ POR CUENTA</h2>
+            <p>Anytime Fitness y Apple Fitness+ se unen para crear una experiencia de bienestar personalizada inigualable.</p>
+            <button type="button">OBTENGA SU PASE DE PRUEBA GRATUITO</button>
+            <p> </p>
+            <p class="small">
+                Abierto a nuevos clientes, residentes locales, solo en Estados Unidos y Canadá. Se requiere identificación con foto. 
+                Oferta válida para acceso de 1 o 7 días a la ubicación participante de Anytime Fitness más hasta 3 meses de Apple® Fitness+. 
+                Apple Fitness+ requiere una suscripción y hardware y software compatibles. La suscripción continúa por $9.99/mes después de la promoción hasta que se cancele. 
+                Apple no es patrocinador de esta promoción. Se aplican otros términos, condiciones y restricciones. Cada ubicación de Anytime Fitness es de propiedad y operación independiente. 
+                Para obtener detalles completos, consulte la página de oferta. Nulo donde esté prohibido.
+            </p>
         </div>
-        <div class="cknimg">
-            <img src="img/fry.png" style="width: 100%;" title="Waffle Fries">
-        </div>
-        <div class="cknimg">
-            <img src="img/nug.png" style="width: 100%;" title="Chicken Nuggies">
-        </div>
-    </div>
-
-    <div class="eatmore">
-        <div class="text1">
-            <h2>Eat Mor Chikin!</h2>
-            <div class="button">
-                <button type="button" onclick="window.alert('MoOoOooOOOOooOOOoOooO!')">Moo</button>
-            </div>
-        </div>
-        <div class="text2">
-            <a href="https://www.ucdavis.edu/food/news/making-cattle-more-sustainable" target="blank">Save the cows, save
-                the planet</a>
+        <div class="promo-image">
+            <img src="../../img/homepage2.webp" alt="Apple Fitness+ Promotion"> <!-- Reemplaza src con tu imagen -->
         </div>
     </div>
 
-    <div class="video">
-        <div class="cows">
-            <iframe width="1120" height="630" src="https://www.youtube.com/embed/26qzmw_xG58" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+
+
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="">Política De Privacidad</a>
+            <a href="">Términos Y Condiciones</a>
+            <a href="">Mapa Del Sitio</a>
         </div>
-    </div>
-
-    <div class="crew">
-        <p>Brought to you by the Cattle-Crew&reg;</p>
-    </div>
-
-    <div class="formbx">
-        <form action="" id="form" onsubmit="sConsole(event)">
-            <label for="cow">Whats your favorite cow?</label>
-            <input type="text" name="data"id="data" placeholder="Betty...Ron...">
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-
-    <footer class="footerbx" id="contact">
-        <h2>Let's be friends</h2>
-        <div class="footer">
-            <a href="https://www.instagram.com/chickfila/?hl=en" target="blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/ChickfilA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                target="blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.facebook.com/ChickfilA/" target="blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.youtube.com/user/chickfila/featured" target="blank"><i class="fab fa-youtube"></i></a>
+        <div class="social-media-links">
+            <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
         </div>
     </footer>
 
 </body>
-
-
-
 </html>

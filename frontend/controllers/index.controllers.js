@@ -32,7 +32,7 @@ const indexN = (req = request, res = response) => {
 const menu = async (req = request, res = response) => {
   try {
     // Realizar la solicitud GET a la API utilizando Axios
-    const response = await axios.get('http://localhost:8000/platillos/api');
+    const response = await axios.get('http://localhost:8000/servicios/api');
 
     // Verificar si la solicitud fue exitosa
     if (response.status !== 200) {
@@ -40,25 +40,25 @@ const menu = async (req = request, res = response) => {
     }
 
     // Obtener los datos de la respuesta
-    const platillos = response.data;
+    const servicios = response.data;
 
     // Agrupar los platillos en grupos de tres
-    const platillosGrupos = [];
-    for (let i = 0; i < platillos.length; i += 3) {
-      platillosGrupos.push(platillos.slice(i, i + 3));
+    const serviciosGrupos = [];
+    for (let i = 0; i < servicios.length; i += 3) {
+      serviciosGrupos.push(servicios.slice(i, i + 3));
     }
 
     // Renderizar la plantilla con los platillos obtenidos
-    res.render("unlogin/menu.hbs", { platillosGrupos });
+    res.render("unlogin/menu.hbs", { platillosGrupos: serviciosGrupos });
   } catch (error) {
-    console.error("Error al obtener los platillos:", error);
-    res.status(500).send("Error al obtener los platillos");
+    console.error("Error al obtener los servicios:", error);
+    res.status(500).send("Error al obtener los servicios");
   }
 };
 const menuNormal = async (req = request, res = response) => {
   try {
     // Realizar la solicitud GET a la API utilizando Axios
-    const response = await axios.get('http://localhost:8000/platillos/api');
+    const response = await axios.get('http://localhost:8000/servicios/api');
 
     // Verificar si la solicitud fue exitosa
     if (response.status !== 200) {
@@ -66,19 +66,19 @@ const menuNormal = async (req = request, res = response) => {
     }
 
     // Obtener los datos de la respuesta
-    const platillos = response.data;
+    const servicios = response.data;
 
     // Agrupar los platillos en grupos de tres
-    const platillosGrupos = [];
-    for (let i = 0; i < platillos.length; i += 3) {
-      platillosGrupos.push(platillos.slice(i, i + 3));
+    const serviciosgrupos = [];
+    for (let i = 0; i < servicios.length; i += 3) {
+      serviciosgrupos.push(servicios.slice(i, i + 3));
     }
 
     // Renderizar la plantilla con los platillos obtenidos
-    res.render("login/menu.hbs", { platillosGrupos });
+    res.render("login/menu.hbs", { platillosGrupos: serviciosgrupos });
   } catch (error) {
-    console.error("Error al obtener los platillos:", error);
-    res.status(500).send("Error al obtener los platillos");
+    console.error("Error al obtener los servicios:", error);
+    res.status(500).send("Error al obtener los servicios");
   }
 };
 
@@ -86,7 +86,7 @@ const menuAdmin = async (req = request, res = response) => {
   
   try {
     // Realizar la solicitud GET a la API
-    const response = await axios.get('http://localhost:8000/platillos/api');
+    const response = await axios.get('http://localhost:8000/servicios/api');
 
     // Verificar si la solicitud fue exitosa
     if (response.status !== 200) {
@@ -94,19 +94,19 @@ const menuAdmin = async (req = request, res = response) => {
     }
 
     // Obtener los datos de la respuesta
-    const platillos = response.data;
+    const servicios = response.data;
 
     // Agrupar los platillos en grupos de tres
-    const platillosGrupos = [];
-    for (let i = 0; i < platillos.length; i += 3) {
-      platillosGrupos.push(platillos.slice(i, i + 3));
+    const serviciosGrupos = [];
+    for (let i = 0; i < servicios.length; i += 3) {
+      serviciosGrupos.push(servicios.slice(i, i + 3));
     }
 
     // Renderizar la plantilla con los platillos obtenidos
-    res.render("login/menuAdmin.hbs", { platillosGrupos });
+    res.render("login/menuAdmin.hbs", { platillosGrupos: serviciosGrupos });
   } catch (error) {
-    console.error("Error al obtener los platillos:", error);
-    res.status(500).send("Error al obtener los platillos");
+    console.error("Error al obtener los servicios:", error);
+    res.status(500).send("Error al obtener los servicios");
   }
 };
 
@@ -128,7 +128,7 @@ const mostrarProducto = async (req = request, res = response) => {
   const { id } = req.params;
   try {
       // Realizar la solicitud HTTP para obtener el producto
-      const response = await axios.get(`http://localhost:8000/platillos/api/${id}`);
+      const response = await axios.get(`http://localhost:8000/servicios/api/${id}`);
 
       // Verificar si la solicitud fue exitosa
       if (response.status === 200) {

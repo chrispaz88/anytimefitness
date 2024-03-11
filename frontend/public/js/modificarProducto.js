@@ -11,7 +11,7 @@ form.addEventListener("submit", function (event) {
 
     const formData = new FormData(form);
     
-    fetch(`http://localhost:8000/platillos/api/${productoId}`, {
+    fetch(`http://localhost:8000/servicios/api/${productoId}`, {
         method: 'PUT',
         body: formData
     })

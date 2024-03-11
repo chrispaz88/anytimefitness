@@ -15,7 +15,7 @@ html {
 .header {
     display: flex;
     width: 100%;
-    background-color: #fff;
+    background-color: #5603ad;  
     margin-top: 0;
     padding: 20px;
 }
@@ -35,7 +35,7 @@ html {
 
 .navbar a {
     padding: 5px 50px 0 0;
-    color: #E51636;
+    color: #fff;
     font-size: 1.1em;
     font-weight: 700;
     text-decoration: underline 0.1em rgba(0, 0, 0, 0);
@@ -67,7 +67,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #E51636;
+    color: #5603ad;
     font-size: 2em;
 }
 
@@ -125,14 +125,14 @@ html {
 }
 
 .chicken h2:hover {
-    color: #E51636;
+    color: #5603ad;
     transition: 0.3s ease;
 }
 
 .notice {
     display: flex;
     justify-content: center;
-    color: #E51636;
+    color: #5603ad;
     margin-bottom: 2rem;
     font-style: italic;
     font-size: 0.75em;
@@ -158,7 +158,7 @@ html {
 .footer a {
     padding: 1rem;
     font-size: 1.5em;
-    color: #E51636;
+    color: #5603ad;
 }
 
 .fab {
@@ -180,7 +180,7 @@ html {
     padding: 10px;
     font-size: 1.2em;
     color: #fff;
-    background-color: #E51636;
+    background-color: #5603ad;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;

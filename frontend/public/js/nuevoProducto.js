@@ -5,7 +5,7 @@ form.addEventListener("submit", function (event) {
 
     const formData = new FormData(form);
     
-    fetch('http://localhost:8000/platillos/api', { // Cambia la URL aquí
+    fetch('http://localhost:8000/servicios/api', { // Cambia la URL aquí
         method: 'POST',
         body: formData
     })
@@ -34,7 +34,7 @@ function submitHandler(event) {
 
     const formData = new FormData(form);
     
-    fetch('http://localhost:8000/platillos/api', {
+    fetch('http://localhost:8000/servicios/api', {
         method: 'POST',
         body: formData
     })
